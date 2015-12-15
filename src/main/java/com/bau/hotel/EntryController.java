@@ -80,7 +80,7 @@ public class EntryController {
             Entry entryData = new Entry();
             entryData.setTitle(title);
             entryData.setEntry(entry);
-            entryData.setImagePath1(saveUploadedFile(imageFile, session.getServletContext()));
+            entryData.setImagePath(saveUploadedFile(imageFile, session.getServletContext()));
 //            entryData.setImagePath2(saveUploadedFile(imageFile2, session.getServletContext()));
 //            entryData.setImagePath3(saveUploadedFile(imageFile3, session.getServletContext()));
 //            entryData.setImagePath4(saveUploadedFile(imageFile4, session.getServletContext()));
@@ -105,11 +105,17 @@ public class EntryController {
         String filePath = null;
 
         if (!imageFile.isEmpty()) {
-            String displayFolder = "/resources/uploaded/";
-            File uploadFolder = getUploadFolder(servletContext, displayFolder);
 
-            writeUploadedFileToDisk(imageFile, uploadFolder);
-            filePath = displayFolder + "/" + imageFile.getOriginalFilename();
+            String message = "";
+            for(int i = 0; i < imageFile.length; i++) {
+                MultipartFile image = imageFile[i];
+
+                String displayFolder = "/resources/uploaded/";
+                File uploadFolder = getUploadFolder(servletContext, displayFolder);
+
+                writeUploadedFileToDisk(imageFile, uploadFolder);
+                filePath = displayFolder + "/" + imageFile.getOriginalFilename();
+            }
         }
 
         return filePath;

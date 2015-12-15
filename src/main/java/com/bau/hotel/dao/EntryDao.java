@@ -24,7 +24,7 @@ public class EntryDao {
         jdbcTemplate.update(sql, entry.getTitle(),
                 entry.getEntry(),
                 user.getId(),
-                entry.getImagePath1());
+                entry.getImagePath());
 //                entry.getImagePath2(), , image_path2, image_path3, image_path4, image_path5
 //                entry.getImagePath3(), , ?, ?, ?, ?
 //                entry.getImagePath4(), , e.image_path2, e.image_path3, e.image_path4, e.image_path5
@@ -65,7 +65,7 @@ public class EntryDao {
             entry.setTitle(rs.getString("title"));
             entry.setEntry(rs.getString("entry"));
             entry.setCreateDate(rs.getDate("create_date"));
-            entry.setImagePath1(rs.getString("image_path"));
+            entry.setImagePath(rs.getString("image_path"));
 //            entry.setImagePath2(rs.getString("image_path2"));
 //            entry.setImagePath3(rs.getString("image_path3"));
 //            entry.setImagePath4(rs.getString("image_path4"));
