@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="021fb430-0918-45ee-b92a-0a7831db04c3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bau/hotel/model/Entry.java" afterPath="$PROJECT_DIR$/src/main/java/com/bau/hotel/model/Entry.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bau/hotel/EntryController.java" afterPath="$PROJECT_DIR$/src/main/java/com/bau/hotel/EntryController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bau/hotel/dao/EntryDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/bau/hotel/dao/EntryDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="blog.iws" />
@@ -852,12 +849,19 @@
       <updated>1449845183231</updated>
       <workItem from="1449845189482" duration="106000" />
       <workItem from="1449846144800" duration="10254000" />
-      <workItem from="1449934268085" duration="10158000" />
+      <workItem from="1449934268085" duration="10310000" />
     </task>
+    <task id="LOCAL-00001" summary="updated file times to imageFile as an array but imageFile.length wont work now">
+      <created>1450180067738</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1450180067738</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20518000" />
+    <option name="totallyTimeSpent" value="20670000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -869,7 +873,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -942,6 +946,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updated file times to imageFile as an array but imageFile.length wont work now" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated file times to imageFile as an array but imageFile.length wont work now" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
