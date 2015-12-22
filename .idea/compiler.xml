@@ -23,8 +23,11 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="blog" />
+        <module name="Hotels" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.8" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="Hotels" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

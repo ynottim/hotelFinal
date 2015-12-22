@@ -1,9 +1,11 @@
 package com.bau.hotel.dao;
 
 import com.bau.hotel.model.Entry;
+import com.bau.hotel.model.Tag;
 import com.bau.hotel.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
@@ -57,6 +59,19 @@ public class EntryDao {
         return tag;
     }
 
+    public Entry getEntry(int entryId) {
+        String sql = "select e.id, e.title, e.entry, e.create_date, e.image_path, u.firstname, u.lastname " +
+                "  from entries e, users u " +
+                " where e.author = u.id " +
+                "   and e.id = ? ";
+
+        try {
+            return jdbcTemplate.queryForObject(sql, new Object[]{entryId}, new EntryRowMapper());
+        } catch( EmptyResultDataAccessException e ){
+            return null;
+        }
+    }
+
     public List<Tag> getTags(Entry entry){
         String sql = "SELECT t.id, t.name FROM tags t, entry_tags e" +
                 "  WHERE e.tag_id = t.id AND e.entry_id = ?";
@@ -80,26 +95,22 @@ public class EntryDao {
         return jdbcTemplate.query(sql, new TagRowMapper());
     }
 
-
-    public Entry getEntry(int entryId) {
-        String sql = "select e.id, e.title, e.entry, e.create_date, e.image_path, u.firstname, u.lastname " +
-                     "  from entries e, users u " +
-                     " where e.author = u.id " +
-                     "   and e.id = ? ";
-
-        try {
-            return jdbcTemplate.queryForObject(sql, new Object[]{entryId}, new EntryRowMapper());
-        } catch( EmptyResultDataAccessException e ){
-            return null;
-        }
-    }
-
     public List<Entry> getEntries(){
         String sql = "select e.id, e.title, e.entry, e.create_date, e.image_path, u.firstname, u.lastname " +
                      "  from entries e, users u " +
                      " where e.author = u.id ";
 
         return jdbcTemplate.query(sql, new EntryRowMapper());
+    }
+
+    public List<Entry> getEntries(Tag tag){
+        String sql = "select e.id, e.title, e.entry, e.create_date, e.image_path, u.firstname, u.lastname " +
+                "  from entries e, users u, entry_tags et " +
+                " where e.author = u.id " +
+                "   AND e.id = et.entry_id " +
+                "   AND et.tag_id = ?";
+
+        return jdbcTemplate.query(sql, new EntryRowMapper(), tag.getId());
     }
 
     @Autowired
@@ -124,6 +135,15 @@ public class EntryDao {
             entry.setAuthor(author);
 
             return entry;
+        }
+    }
+    private static class TagRowMapper implements RowMapper<Tag> {
+        @Override
+        public Tag mapRow(ResultSet rs, int rowNum) throws SQLException {
+            Tag tag = new Tag();
+            tag.setId(rs.getInt("id"));
+            tag.setTagName(rs.getString("name"));
+            return tag;
         }
     }
 }

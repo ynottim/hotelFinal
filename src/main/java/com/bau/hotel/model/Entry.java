@@ -1,6 +1,9 @@
 package com.bau.hotel.model;
 
 import java.util.Date;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Entry {
     private int id;
@@ -9,6 +12,8 @@ public class Entry {
     private Date createDate;
     private User author;
     private String imagePath;
+    private List<String> tagList = new ArrayList<>();
+
 
     public int getId() {
         return id;
@@ -56,6 +61,22 @@ public class Entry {
 
     public void setImagePath(String imagePath) {
         this.imagePath = imagePath;
+    }
+
+    public List<String> getTagList() {
+        return tagList;
+    }
+
+    public void setTagList(List<String> tagList) {
+        this.tagList = tagList;
+    }
+
+    public void addTags(String[] tagArray){
+        this.tagList.addAll( Arrays.asList(tagArray) );
+    }
+
+    public boolean hasAnyTags() {
+        return this.tagList.size() > 0;
     }
 
 }

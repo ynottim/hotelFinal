@@ -5,7 +5,7 @@
   <artifactId>blog</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>blog Maven Webapp</name>
+  <name>hotel Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
       <dependency>
@@ -69,10 +69,15 @@
           <artifactId>commons-io</artifactId>
           <version>2.4</version>
       </dependency>
+      <dependency>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-databind</artifactId>
+          <version>2.6.2</version>
+      </dependency>
 
   </dependencies>
   <build>
-    <finalName>blog</finalName>
+    <finalName>hotel</finalName>
       <plugins>
           <plugin>
               <groupId>org.apache.maven.plugins</groupId>
