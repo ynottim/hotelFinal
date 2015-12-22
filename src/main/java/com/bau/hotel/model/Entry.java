@@ -9,10 +9,6 @@ public class Entry {
     private Date createDate;
     private User author;
     private String imagePath;
-//    private String imagePath2;
-//    private String imagePath3;
-//    private String imagePath4;
-//    private String imagePath5;
 
     public int getId() {
         return id;
@@ -62,35 +58,4 @@ public class Entry {
         this.imagePath = imagePath;
     }
 
-//    public String getImagePath2() {
-//        return imagePath2;
-//    }
-//
-//    public void setImagePath2(String imagePath2) {
-//        this.imagePath2 = imagePath2;
-//    }
-//
-//    public String getImagePath3() {
-//        return imagePath3;
-//    }
-//
-//    public void setImagePath3(String imagePath3) {
-//        this.imagePath3 = imagePath3;
-//    }
-//
-//    public String getImagePath4() {
-//        return imagePath4;
-//    }
-//
-//    public void setImagePath4(String imagePath4) {
-//        this.imagePath4 = imagePath4;
-//    }
-//
-//    public String getImagePath5() {
-//        return imagePath5;
-//    }
-//
-//    public void setImagePath5(String imagePath5) {
-//        this.imagePath5 = imagePath5;
-//    }
 }

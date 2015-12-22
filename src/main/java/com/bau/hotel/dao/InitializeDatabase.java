@@ -38,10 +38,18 @@ public class InitializeDatabase {
                 "  author INT," +
                 "  image_path VARCHAR(200) DEFAULT NULL)";
 
-//               + "  image_path2 VARCHAR(200) DEFAULT NULL)" +
-//                "  image_path3 VARCHAR(200) DEFAULT NULL)" +
-//                "  image_path4 VARCHAR(200) DEFAULT NULL)" +
-//                "  image_path5 VARCHAR(200) DEFAULT NULL)"
+        this.jdbcTemplate.execute(sql);
+
+        sql = "CREATE TABLE IF NOT EXISTS tags (" +
+                "  id INT AUTO_INCREMENT NOT NULL PRIMARY KEY," +
+                "  name VARCHAR(200) )";
+
+        this.jdbcTemplate.execute(sql);
+
+        sql = "CREATE TABLE IF NOT EXISTS entry_tags (" +
+                "  id INT AUTO_INCREMENT NOT NULL PRIMARY KEY," +
+                "  entry_id INT, " +
+                "  tag_id INT )";
 
         this.jdbcTemplate.execute(sql);
     }

@@ -25,4 +25,9 @@
         <filter-name>authenticationFilter</filter-name>
         <servlet-name>hotel</servlet-name>
     </filter-mapping>
+
+    <mime-mapping>
+        <extension>svg</extension>
+        <mime-type>image/svg+xml</mime-type>
+    </mime-mapping>
 </web-app>

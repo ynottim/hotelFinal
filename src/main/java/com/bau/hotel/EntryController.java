@@ -5,6 +5,7 @@ import com.bau.hotel.model.Entry;
 import com.bau.hotel.model.User;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.mutable.MutableLong;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -65,11 +66,7 @@ public class EntryController {
     @RequestMapping(path = "/secure/addHotelReview", method = RequestMethod.POST)
     public ModelAndView addEntry(@RequestParam("title") String title,
                                  @RequestParam("entry") String entry,
-                                 @RequestParam("image") MultipartFile imageFile,
-//                                 @RequestParam("image2") MultipartFile imageFile2,
-//                                 @RequestParam("image3") MultipartFile imageFile3,
-//                                 @RequestParam("image4") MultipartFile imageFile4,
-//                                 @RequestParam("image5") MultipartFile imageFile5,
+                                 @RequestParam("image") MultipartFile imageFile[],
                                  @RequestParam("csrfToken") String csrfToken,
                                  HttpSession session){
 
@@ -81,10 +78,6 @@ public class EntryController {
             entryData.setTitle(title);
             entryData.setEntry(entry);
             entryData.setImagePath(saveUploadedFile(imageFile, session.getServletContext()));
-//            entryData.setImagePath2(saveUploadedFile(imageFile2, session.getServletContext()));
-//            entryData.setImagePath3(saveUploadedFile(imageFile3, session.getServletContext()));
-//            entryData.setImagePath4(saveUploadedFile(imageFile4, session.getServletContext()));
-//            entryData.setImagePath5(saveUploadedFile(imageFile5, session.getServletContext()));
             entryDao.addEntry(entryData, user);
             mav = new ModelAndView(new RedirectView("/", true));
         } else {
@@ -101,20 +94,28 @@ public class EntryController {
         return csrfTokenValue != null && csrfTokenValue.equals(csrfToken);
     }
 
-    private String saveUploadedFile(MultipartFile imageFile, ServletContext servletContext) {
+    private String saveUploadedFile(MultipartFile imageFile[], ServletContext servletContext) {
         String filePath = null;
 
-        if (!imageFile.isEmpty()) {
+//        String fileName = uploadedFile.getFileName();
+//        String mimeType = getServletContext().getMimeType(fileName);
+//        if (mimeType.startsWith("image/")) {
+//            // It's an image.
+//        }
 
-            String message = "";
-            for(int i = 0; i < imageFile.length; i++) {
-                MultipartFile image = imageFile[i];
+        for(MultipartFile file : imageFile) {
+            if(!file.isEmpty());
+            {
+                for(int i = 0; i < imageFile.length; i++) {
 
-                String displayFolder = "/resources/uploaded/";
-                File uploadFolder = getUploadFolder(servletContext, displayFolder);
+                    MultipartFile image = imageFile[i];
 
-                writeUploadedFileToDisk(imageFile, uploadFolder);
-                filePath = displayFolder + "/" + imageFile.getOriginalFilename();
+                    String displayFolder = "/resources/upload";
+                    File uploadFolder = getUploadFolder(servletContext, displayFolder);
+
+                    writeUploadedFileToDisk(imageFile[i],uploadFolder);
+                    filePath = displayFolder + "/" + image.getOriginalFilename();
+                }
             }
         }
 

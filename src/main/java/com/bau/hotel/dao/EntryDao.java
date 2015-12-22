@@ -25,11 +25,61 @@ public class EntryDao {
                 entry.getEntry(),
                 user.getId(),
                 entry.getImagePath());
-//                entry.getImagePath2(), , image_path2, image_path3, image_path4, image_path5
-//                entry.getImagePath3(), , ?, ?, ?, ?
-//                entry.getImagePath4(), , e.image_path2, e.image_path3, e.image_path4, e.image_path5
-//                entry.getImagePath5()); , e.image_path2, e.image_path3, e.image_path4, e.image_path5,
+
+        Integer entryId = jdbcTemplate.queryForObject("select SCOPE_IDENTITY( )", Integer.class);
+        entry.setId(entryId);
+
+
+        if( entry.hasAnyTags() ){
+            for(  String tagName : entry.getTagList() ){
+                Tag tag = getEntryTag(tagName);
+
+                if( tag == null ){
+                    sql = "INSERT INTO tags (name) VALUES (?)";
+                    jdbcTemplate.update(sql, tagName);
+                    tag = getEntryTag(tagName);
+                }
+
+                sql = "INSERT INTO entry_tags (entry_id, tag_id) VALUES (?, ?)";
+                jdbcTemplate.update(sql, entry.getId(), tag.getId());
+            }
+        }
     }
+
+    private Tag getEntryTag(String tagName) {
+        String sql = "SELECT id, name FROM tags WHERE name = ?";
+        Tag tag;
+        try{
+            tag = jdbcTemplate.queryForObject(sql, new TagRowMapper(), tagName);
+        } catch(EmptyResultDataAccessException e){
+            tag = null;
+        }
+        return tag;
+    }
+
+    public List<Tag> getTags(Entry entry){
+        String sql = "SELECT t.id, t.name FROM tags t, entry_tags e" +
+                "  WHERE e.tag_id = t.id AND e.entry_id = ?";
+
+        return jdbcTemplate.query(sql, new TagRowMapper(), entry.getId());
+    }
+
+    public Tag getTag(Integer tagId){
+        String sql = "SELECT t.id, t.name FROM tags t WHERE t.id = ?";
+
+        try {
+            return jdbcTemplate.queryForObject(sql, new TagRowMapper(), tagId);
+        } catch(EmptyResultDataAccessException e){
+            return  null;
+        }
+    }
+
+    public List<Tag> getAllTags(){
+        String sql = "SELECT t.id, t.name FROM tags t";
+
+        return jdbcTemplate.query(sql, new TagRowMapper());
+    }
+
 
     public Entry getEntry(int entryId) {
         String sql = "select e.id, e.title, e.entry, e.create_date, e.image_path, u.firstname, u.lastname " +
@@ -66,10 +116,6 @@ public class EntryDao {
             entry.setEntry(rs.getString("entry"));
             entry.setCreateDate(rs.getDate("create_date"));
             entry.setImagePath(rs.getString("image_path"));
-//            entry.setImagePath2(rs.getString("image_path2"));
-//            entry.setImagePath3(rs.getString("image_path3"));
-//            entry.setImagePath4(rs.getString("image_path4"));
-//            entry.setImagePath5(rs.getString("image_path5"));
 
             User author = new User();
             author.setFirstName(rs.getString("firstname"));

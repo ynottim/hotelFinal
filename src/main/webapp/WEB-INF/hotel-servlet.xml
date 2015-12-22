@@ -15,7 +15,7 @@
 
     <bean class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close" id="dataSource">
         <property name="driverClassName" value="org.h2.Driver" />
-        <property name="url" value="jdbc:h2:~/blog" />
+        <property name="url" value="jdbc:h2:~/hotels" />
         <property name="username" value="sa" />
         <property name="password" value="" />
     </bean>
@@ -32,8 +32,7 @@
     <bean id="multipartResolver"
                 class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
         <!-- setting maximum upload size -->
-        <property name="maxUploadSize" value="1000000" />
+        <property name="maxUploadSize" value="1902178" />
     </bean>
-
 
 </beans>
