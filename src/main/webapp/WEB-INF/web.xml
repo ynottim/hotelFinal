@@ -15,7 +15,6 @@
         <servlet-name>hotel</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
-
     <filter>
         <filter-name>authenticationFilter</filter-name>
         <filter-class>com.bau.hotel.filter.AuthenticationFilter</filter-class>
