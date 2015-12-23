@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="021fb430-0918-45ee-b92a-0a7831db04c3" name="Default" comment="fully updated from last lecture before testing &#10;mutiple uploads seems to be a broken link">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/JPA_1_0_JPA_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/error.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/error404.jsp" />
-      <change type="DELETED" beforePath="C:\Users\Tim\Desktop\MyFinalProject\src\main\webapp\resources\img\logo_red.png" afterPath="" />
+    <list default="true" id="021fb430-0918-45ee-b92a-0a7831db04c3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/bau/hotel/model/Entry.class" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/bau/hotel/model/Entry.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/bau/hotel/model/Entry.class" afterPath="$PROJECT_DIR$/target/classes/com/bau/hotel/model/Entry.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/bau/hotel/EntryController.class" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/bau/hotel/EntryController.class" />
@@ -18,13 +14,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/bau/hotel/dao/InitializeDatabase.class" afterPath="$PROJECT_DIR$/target/classes/com/bau/hotel/dao/InitializeDatabase.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/bau/hotel/MainController.class" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/bau/hotel/MainController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/bau/hotel/MainController.class" afterPath="$PROJECT_DIR$/target/classes/com/bau/hotel/MainController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hotels.iml" afterPath="$PROJECT_DIR$/Hotels.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/addHotelReview.jsp" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/addHotelReview.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/readHotelReview.jsp" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/readHotelReview.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -934,7 +925,7 @@
       <workItem from="1450368947564" duration="305000" />
       <workItem from="1450369527658" duration="367000" />
       <workItem from="1450699057501" duration="11533000" />
-      <workItem from="1450779176001" duration="9335000" />
+      <workItem from="1450779176001" duration="9368000" />
     </task>
     <task id="LOCAL-00001" summary="updated file times to imageFile as an array but imageFile.length wont work now">
       <created>1450180067738</created>
@@ -954,11 +945,17 @@
       <option name="project" value="LOCAL" />
       <updated>1450814349604</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fully updated from last lecture before testing &#10;mutiple uploads seems to be a broken link">
+      <created>1450886834897</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1450886834897</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50058000" />
+    <option name="totallyTimeSpent" value="50091000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
