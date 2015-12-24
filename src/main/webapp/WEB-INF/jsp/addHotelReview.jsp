@@ -53,6 +53,6 @@
 <!-- page-wrapper end -->
 <!-- JavaScript files placed at the end of the document so the pages load faster
    ================================================== -->
-<jsp:include page="footer.jsp" />
+<jsp:include page="/WEB-INF/jsp/footer.jsp" />
 </body>
 </html>

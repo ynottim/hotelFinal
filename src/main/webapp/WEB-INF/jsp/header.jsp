@@ -13,14 +13,14 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
   <title>Tim | Hotel Reviews</title>
-  <link href="resources/css/webfonts.css" rel="stylesheet" type="text/css">
-  <link href="resources/css/bootstrap.css" rel="stylesheet">
-  <link href="resources/css/font-awesome.css" rel="stylesheet">
-  <link href="resources/css/fontello.css" rel="stylesheet">
-  <link href="resources/css/magnific-popup.css" rel="stylesheet">
-  <link href="resources/css/animations.css" rel="stylesheet">
-  <link href="resources/css/owl.carousel.css" rel="stylesheet">
-  <link href="resources/css/style.css" rel="stylesheet">
+  <link href=<c:url value="/resources/css/webfonts.css" /> rel="stylesheet" type="text/css">
+  <link href=<c:url value="/resources/css/bootstrap.css" /> rel="stylesheet">
+  <link href=<c:url value="/resources/css/font-awesome.css" /> rel="stylesheet">
+  <link href=<c:url value="/resources/css/fontello.css" /> rel="stylesheet">
+  <link href=<c:url value="/resources/css/magnific-popup.css" /> rel="stylesheet">
+  <link href=<c:url value="/resources/css/animations.css" /> rel="stylesheet">
+  <link href=<c:url value="/resources/css/owl.carousel.css" /> rel="stylesheet">
+  <link href=<c:url value="/resources/css/style.css" /> rel="stylesheet">
 </head>
   <header class="header fixed clearfix">
     <div class="container">
@@ -31,7 +31,7 @@
           <div class="header-left clearfix">
             <!-- logo -->
             <div class="logo">
-              <a href="<c:url value="/" />"><img id="logo" src="resources/img/seb_logo.png" alt="Sebastian"></a>
+              <a href="<c:url value="/" />"><img id="logo" src=<c:url value="/resources/img/seb_logo.png" /> alt="Sebastian"></a>
             </div>
             <%--<!-- name-and-slogan -->--%>
             <%--<div class="site-slogan">--%>

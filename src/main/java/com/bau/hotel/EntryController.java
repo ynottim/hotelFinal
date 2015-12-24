@@ -116,25 +116,23 @@ public class EntryController {
     private String saveUploadedFile(MultipartFile imageFile[], ServletContext servletContext) {
         String filePath = null;
 
-//        String fileName = uploadedFile.getFileName();
-//        String mimeType = getServletContext().getMimeType(fileName);
-//        if (mimeType.startsWith("image/")) {
-//            // It's an image.
-//        }
-
         for(MultipartFile file : imageFile) {
-            if(!file.isEmpty());
+            if(!file.isEmpty())
             {
-                for(int i = 0; i < imageFile.length; i++) {
-
-                    MultipartFile image = imageFile[i];
-
+//                for(int i = 0; i < imageFile.length; i++) {
+//
+//                    MultipartFile image = imageFile[i];
+//                String fileName = imageFile.getFileName();
+//                String mimeType = getServletContext().getMimeType(fileName);
+//                if (mimeType.startsWith("image/")) {
+//                    // It's an image.
+//                }
                     String displayFolder = "/resources/upload";
                     File uploadFolder = getUploadFolder(servletContext, displayFolder);
 
-                    writeUploadedFileToDisk(imageFile[i],uploadFolder);
-                    filePath = displayFolder + "/" + image.getOriginalFilename();
-                }
+                    writeUploadedFileToDisk(file,uploadFolder);
+                    filePath = displayFolder + "/" + file.getOriginalFilename();
+//                }
             }
         }
 
@@ -144,7 +142,7 @@ public class EntryController {
     private void writeUploadedFileToDisk(MultipartFile imageFile, File uploadFolder) {
         File serverFile = new File(uploadFolder, imageFile.getOriginalFilename());
 
-        try(BufferedOutputStream stream =  new BufferedOutputStream(new FileOutputStream(serverFile));){
+        try(BufferedOutputStream stream =  new BufferedOutputStream(new FileOutputStream(serverFile))){
             stream.write(imageFile.getBytes());
         } catch(Exception e) {
             throw new RuntimeException(e);

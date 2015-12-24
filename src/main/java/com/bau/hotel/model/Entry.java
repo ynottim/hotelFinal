@@ -14,7 +14,6 @@ public class Entry {
     private String imagePath;
     private List<String> tagList = new ArrayList<>();
 
-
     public int getId() {
         return id;
     }
