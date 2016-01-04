@@ -18,9 +18,9 @@
             <div class="main col-md-8">
                 <!-- page-title start -->
                 <!-- ================ -->
-                <h1 class="page-title">Blog Masonry Layout</h1>
+                <h1 class="page-title">Sebastian Hotel Guide</h1>
                 <div class="separator-2"></div>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas nulla suscipit <br class="hidden-sm hidden-xs"> unde rerum mollitia dolorum.</p>
+                <p class="lead">All you need to know right here. If you don't see the hotel your thinking about then send us an email and we will get to adding it</p>
                 <!-- page-title end -->
                 <!-- masonry grid start -->
                 <div class="masonry-grid row" style="position: relative; height: 2641.16px;">
@@ -52,13 +52,13 @@
                                         <p>${fn:substring(entry.entry, 0, 100)}</p>
                                     </div>
                                 </div>
-                                <footer class="clearfix">
-                                    <ul class="links pull-left">
-                                        <li><i class="fa fa-comment-o pr-5"></i> <a href="./iDea _ Blog_files/blog-masonry-sidebar.html">22 comments</a> |</li>
-                                        <li><i class="fa fa-tags pr-5"></i> <a href="./iDea _ Blog_files/blog-masonry-sidebar.html">tag 1</a></li>
-                                    </ul>
-                                    <a class="pull-right link" href="<c:url value="/readHotelReview?id=${entry.id}" />"><span>Read more</span></a>
-                                </footer>
+                                <%--<footer class="clearfix">--%>
+                                    <%--<ul class="links pull-left">--%>
+                                        <%--<li><i class="fa fa-comment-o pr-5"></i> <a href="./iDea _ Blog_files/blog-masonry-sidebar.html">22 comments</a> |</li>--%>
+                                        <%--<li><i class="fa fa-tags pr-5"></i> <a href="./iDea _ Blog_files/blog-masonry-sidebar.html">tag 1</a></li>--%>
+                                    <%--</ul>--%>
+                                    <%--<a class="pull-right link" href="<c:url value="/readHotelReview?id=${entry.id}" />"><span>Read more</span></a>--%>
+                                <%--</footer>--%>
                             </article>
                             <!-- blogpost end -->
                         </div>

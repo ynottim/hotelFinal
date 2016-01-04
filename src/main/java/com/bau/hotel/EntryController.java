@@ -16,11 +16,13 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
 
+import javax.imageio.ImageIO;
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpSession;
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.InputStream;
 import java.util.Arrays;
 import java.util.List;
 
@@ -79,10 +81,11 @@ public class EntryController {
     @RequestMapping(path = "/secure/addHotelReview", method = RequestMethod.POST)
     public ModelAndView addEntry(@RequestParam("title") String title,
                                  @RequestParam("entry") String entry,
-                                 @RequestParam("image") MultipartFile imageFile[],
                                  @RequestParam("tags") String tags,
                                  @RequestParam("csrfToken") String csrfToken,
-                                 HttpSession session){
+                                 @RequestParam("image") MultipartFile imageFile,
+
+    HttpSession session){
 
         User user = (User) session.getAttribute("user");
         ModelAndView mav;
@@ -113,12 +116,60 @@ public class EntryController {
         return csrfTokenValue != null && csrfTokenValue.equals(csrfToken);
     }
 
-    private String saveUploadedFile(MultipartFile imageFile[], ServletContext servletContext) {
+    private String saveUploadedFile(MultipartFile imageFile, ServletContext servletContext) {
         String filePath = null;
 
-        for(MultipartFile file : imageFile) {
-            if(!file.isEmpty())
-            {
+
+        if (!imageFile.isEmpty()) {
+            try (InputStream input = imageFile.getInputStream()) {
+                try {
+                    ImageIO.read(input).toString();
+                    String displayFolder = "/resources/uploaded/";
+                    File uploadFolder = getUploadFolder(servletContext, displayFolder);
+
+                    writeUploadedFileToDisk(imageFile, uploadFolder);
+                    filePath = displayFolder + "/" + imageFile.getOriginalFilename();
+                    // It's an image (only BMP, GIF, JPG and PNG are recognized).
+                } catch (Exception e) {
+                    return "Only BMP, GIF, JPG and PNG image files are recognized" ;
+                }
+            }
+            catch (Exception e) {
+                e.getMessage();
+            }
+        }
+        return filePath;
+    }
+
+//    private String saveUploadedFile(MultipartFile imageFile[], ServletContext servletContext) {
+
+//    public @ResponseBody String multipleSave(@RequestParam("file") MultipartFile[] files){
+//        String fileName = null;
+//        String msg = "";
+//        String displayFolder = "/resources/upload";
+//        if (files != null && files.length >0) {
+//            for(int i =0 ;i< files.length; i++){
+//                try {
+//                    fileName = files[i].getOriginalFilename();
+//                    byte[] bytes = files[i].getBytes();
+//                    BufferedOutputStream buffStream =
+//                            new BufferedOutputStream(new FileOutputStream(new File(displayFolder + fileName)));
+//                    buffStream.write(bytes);
+//                    buffStream.close();
+//                    msg += "You have successfully uploaded " + fileName +"<br/>";
+//                } catch (Exception e) {
+//                    return "You failed to upload " + fileName + ": " + e.getMessage() +"<br/>";
+//                }
+//            }
+//            return msg;
+//        } else return "Unable to upload. File is empty.";
+
+        //List<String> filePath = null;
+        //List<MultipartFile> files = imageFile.getfiles;
+
+//        for(MultipartFile file : imageFile) {
+//            if(!file.isEmpty())
+//            {
 //                for(int i = 0; i < imageFile.length; i++) {
 //
 //                    MultipartFile image = imageFile[i];
@@ -127,21 +178,20 @@ public class EntryController {
 //                if (mimeType.startsWith("image/")) {
 //                    // It's an image.
 //                }
-                    String displayFolder = "/resources/upload";
-                    File uploadFolder = getUploadFolder(servletContext, displayFolder);
-
-                    writeUploadedFileToDisk(file,uploadFolder);
-                    filePath = displayFolder + "/" + file.getOriginalFilename();
+//                    String displayFolder = "/resources/upload";
+//                    File uploadFolder = getUploadFolder(servletContext, displayFolder);
+//
+//                    writeUploadedFileToDisk(file,uploadFolder);
+//                    filePath = displayFolder + "/" + file.getOriginalFilename();
 //                }
-            }
-        }
-
-        return filePath;
-    }
+//            }
+//        }
+//
+//        //return filePath;
+//    }
 
     private void writeUploadedFileToDisk(MultipartFile imageFile, File uploadFolder) {
         File serverFile = new File(uploadFolder, imageFile.getOriginalFilename());
-
         try(BufferedOutputStream stream =  new BufferedOutputStream(new FileOutputStream(serverFile))){
             stream.write(imageFile.getBytes());
         } catch(Exception e) {

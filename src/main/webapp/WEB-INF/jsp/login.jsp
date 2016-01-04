@@ -36,7 +36,7 @@
                             <div class="col-sm-offset-3 col-sm-8">
                                 <button type="submit" class="btn btn-group btn-default btn-sm">Log In</button>
                                 <ul>
-                                    <li><a href="http://htmlcoder.me/preview/idea/v.1.3/html/page-login.html#">Forgot your password?</a></li>
+                                    <li><a href="">Forgot your password?</a></li>
                                 </ul>
                             </div>
                         </div>

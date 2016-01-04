@@ -68,7 +68,7 @@
                           <span>Welcome ${sessionScope.user.firstName} ${sessionScope.user.lastName}</span>
                         </li>
                         <li>
-                          <a href="<c:url value="/secure/addHotelReview" />">Add Blog Post</a>
+                          <a href="<c:url value="/secure/addHotelReview" />">Add Hotel Review</a>
                         </li>
                         <li>
                           <a href="<c:url value="/exit" />">Logout</a>

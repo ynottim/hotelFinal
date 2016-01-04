@@ -1,5 +1,6 @@
 package com.bau.hotel.model;
 
+import org.springframework.web.multipart.MultipartFile;
 import java.util.Date;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,6 +14,16 @@ public class Entry {
     private User author;
     private String imagePath;
     private List<String> tagList = new ArrayList<>();
+
+    public List<MultipartFile> getFiles() {
+        return files;
+    }
+
+    public void setFiles(List<MultipartFile> files) {
+        this.files = files;
+    }
+
+    private List<MultipartFile> files;
 
     public int getId() {
         return id;

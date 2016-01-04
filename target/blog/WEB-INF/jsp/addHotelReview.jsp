@@ -31,9 +31,9 @@
                         <label for="image">Hotel Images:</label>
                         <input type="file" id="image" name="image"><br />
                         <input type="file" name="image"><br />
-                        <input type="file" name="image"><br />
-                        <input type="file" name="image"><br />
-                        <input type="file" name="image"><br />
+                        <%--<input type="file" name="file"><br />--%>
+                        <%--<input type="file" name="file"><br />--%>
+                        <%--<input type="file" name="file"><br />--%>
                     </div>
                     <div class="form-group">
                         <label for="tags">Tags (separated with comma)</label>

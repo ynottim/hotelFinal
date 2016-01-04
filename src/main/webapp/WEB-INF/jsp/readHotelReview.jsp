@@ -52,83 +52,23 @@
                 <!-- blogpost end -->
 
                 <!-- comments start -->
-                <div class="comments">
-                    <h2 class="title">There are 3 comments</h2>
+                <%--<div class="comments">--%>
+                    <%--<h2 class="title">There are 3 comments</h2>--%>
 
-                    <!-- comment start -->
-                    <div class="comment clearfix">
-                        <div class="comment-avatar">
-                            <img src="./iDea _ Blogpost_files/avatar.jpg" alt="avatar">
-                        </div>
-                        <div class="comment-content">
-                            <h3>Comment title</h3>
-                            <div class="comment-meta">By <a href="http://htmlcoder.me/preview/idea/v.1.3/html/blog-post.html#">admin</a> | Today, 12:31</div>
-                            <div class="comment-body clearfix">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
-                                <a href="./iDea _ Blogpost_files/iDea _ Blogpost.html" class="btn btn-gray more pull-right"><i class="fa fa-reply"></i> Reply</a>
-                            </div>
-                        </div>
-
-                        <!-- comment start -->
-                        <div class="comment clearfix">
-                            <div class="comment-avatar">
-                                <img src="./iDea _ Blogpost_files/avatar.jpg" alt="avatar">
-                            </div>
-                            <div class="comment-content clearfix">
-                                <h3>Comment title</h3>
-                                <div class="comment-meta">By <a href="http://htmlcoder.me/preview/idea/v.1.3/html/blog-post.html#">admin</a> | Today, 12:31</div>
-                                <div class="comment-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
-                                    <a href="./iDea _ Blogpost_files/iDea _ Blogpost.html" class="btn btn-gray more pull-right"><i class="fa fa-reply"></i> Reply</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- comment end -->
-
-                    </div>
-                    <!-- comment end -->
-
-                    <!-- comment start -->
-                    <div class="comment clearfix">
-                        <div class="comment-avatar">
-                            <img src="./iDea _ Blogpost_files/avatar.jpg" alt="avatar">
-                        </div>
-                        <div class="comment-content clearfix">
-                            <h3>Comment title</h3>
-                            <div class="comment-meta">By <a href="http://htmlcoder.me/preview/idea/v.1.3/html/blog-post.html#">admin</a> | Today, 12:31</div>
-                            <div class="comment-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
-                                <a href="./iDea _ Blogpost_files/iDea _ Blogpost.html" class="btn btn-gray more pull-right"><i class="fa fa-reply"></i> Reply</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- comment end -->
-
-                </div>
-                <!-- comments end -->
-
-                <!-- comments form start -->
-                <div class="comments-form">
-                    <h2 class="title">Add your comment</h2>
-                    <form role="form" id="comment-form">
-                        <div class="form-group has-feedback">
-                            <label for="name4">Name</label>
-                            <input type="text" class="form-control" id="name4" placeholder="" name="name4" required="">
-                            <i class="fa fa-user form-control-feedback"></i>
-                        </div>
-                        <div class="form-group has-feedback">
-                            <label for="subject4">Subject</label>
-                            <input type="text" class="form-control" id="subject4" placeholder="" name="subject4" required="">
-                            <i class="fa fa-pencil form-control-feedback"></i>
-                        </div>
-                        <div class="form-group has-feedback">
-                            <label for="message4">Message</label>
-                            <textarea class="form-control" rows="8" id="message4" placeholder="" name="message4" required=""></textarea>
-                            <i class="fa fa-envelope-o form-control-feedback"></i>
-                        </div>
-                        <input type="submit" value="Submit" class="btn btn-default">
-                    </form>
-                </div>
+                    <%--<!-- comment start -->--%>
+                    <%--<div class="comment clearfix">--%>
+                        <%--<div class="comment-avatar">--%>
+                            <%--<img src="./iDea _ Blogpost_files/avatar.jpg" alt="avatar">--%>
+                        <%--</div>--%>
+                        <%--<div class="comment-content">--%>
+                            <%--<h3>Comment title</h3>--%>
+                            <%--<div class="comment-meta">By <a href="http://htmlcoder.me/preview/idea/v.1.3/html/blog-post.html#">admin</a> | Today, 12:31</div>--%>
+                            <%--<div class="comment-body clearfix">--%>
+                                <%--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>--%>
+                                <%--<a href="./iDea _ Blogpost_files/iDea _ Blogpost.html" class="btn btn-gray more pull-right"><i class="fa fa-reply"></i> Reply</a>--%>
+                            <%--</div>--%>
+                        <%--</div>--%>
+                        <%----%>
                 <!-- comments form end -->
 
             </div>
