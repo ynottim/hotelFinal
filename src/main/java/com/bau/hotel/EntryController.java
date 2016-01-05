@@ -2,6 +2,7 @@ package com.bau.hotel;
 
 import com.bau.hotel.dao.EntryDao;
 import com.bau.hotel.model.Entry;
+import com.bau.hotel.model.Tag;
 import com.bau.hotel.model.User;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -96,10 +97,13 @@ public class EntryController {
                 tagArray[i] = tagArray[i].trim();
             }
 
+
             Entry entryData = new Entry();
             entryData.setTitle(title);
             entryData.setEntry(entry);
             entryData.setImagePath(saveUploadedFile(imageFile, session.getServletContext()));
+            entryData.setTagList(Arrays.asList(tagArray));
+
             entryDao.addEntry(entryData, user);
             mav = new ModelAndView(new RedirectView("/", true));
         } else {
@@ -118,7 +122,7 @@ public class EntryController {
 
     private String saveUploadedFile(MultipartFile imageFile, ServletContext servletContext) {
         String filePath = null;
-
+        ModelAndView mav;
 
         if (!imageFile.isEmpty()) {
             try (InputStream input = imageFile.getInputStream()) {
@@ -131,12 +135,22 @@ public class EntryController {
                     filePath = displayFolder + "/" + imageFile.getOriginalFilename();
                     // It's an image (only BMP, GIF, JPG and PNG are recognized).
                 } catch (Exception e) {
+                    mav = new ModelAndView(new RedirectView("/secure/addHotelReview", true));
+                    mav.addObject("error", true);
                     return "Only BMP, GIF, JPG and PNG image files are recognized" ;
                 }
             }
             catch (Exception e) {
+                mav = new ModelAndView(new RedirectView("/secure/addHotelReview", true));
+                mav.addObject("error", true);
                 e.getMessage();
             }
+        }
+        else
+        {
+            mav = new ModelAndView(new RedirectView("/secure/addHotelReview", true));
+            mav.addObject("error", true);
+            return "Only BMP, GIF, JPG and PNG image files are recognized" ;
         }
         return filePath;
     }
@@ -163,9 +177,9 @@ public class EntryController {
 //            }
 //            return msg;
 //        } else return "Unable to upload. File is empty.";
-
-        //List<String> filePath = null;
-        //List<MultipartFile> files = imageFile.getfiles;
+//
+//        List<String> filePath = null;
+//        List<MultipartFile> files = imageFile.getfiles;
 
 //        for(MultipartFile file : imageFile) {
 //            if(!file.isEmpty())

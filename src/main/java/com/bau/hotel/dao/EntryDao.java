@@ -146,4 +146,5 @@ public class EntryDao {
             return tag;
         }
     }
+
 }

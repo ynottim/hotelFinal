@@ -1,12 +1,17 @@
 package com.bau.hotel.model;
 
 import org.springframework.web.multipart.MultipartFile;
+
+import java.io.Serializable;
 import java.util.Date;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Entry {
+public class Entry implements Serializable{
+
+    private static final long serialVersionID = -7046343544195294916L;
+
     private int id;
     private String title;
     private String entry;
@@ -15,15 +20,15 @@ public class Entry {
     private String imagePath;
     private List<String> tagList = new ArrayList<>();
 
-    public List<MultipartFile> getFiles() {
-        return files;
-    }
-
-    public void setFiles(List<MultipartFile> files) {
-        this.files = files;
-    }
-
-    private List<MultipartFile> files;
+//    public List<MultipartFile> getFiles() {
+//        return files;
+//    }
+//
+//    public void setFiles(List<MultipartFile> files) {
+//        this.files = files;
+//    }
+//
+//    private List<MultipartFile> files;
 
     public int getId() {
         return id;

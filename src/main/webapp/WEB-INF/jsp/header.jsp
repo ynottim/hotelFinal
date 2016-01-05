@@ -28,7 +28,7 @@
         <div class="col-md-3">
           <!-- header-left start -->
           <!-- ================ -->
-          <div class="header-left clearfix">
+          <div class="center-block clearfix">
             <!-- logo -->
             <div class="logo">
               <a href="<c:url value="/" />"><img id="logo" src=<c:url value="/resources/img/seb_logo.png" /> alt="Sebastian"></a>

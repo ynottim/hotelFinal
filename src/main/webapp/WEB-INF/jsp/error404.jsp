@@ -10,9 +10,9 @@
 <html>
 
 <head>
-    <title>Error Error Error Error</title>
+    <title>404 Error Page Not Found</title>
 </head>
-<a href="<c:url value="/" />"><img id="" src="resources/img/androiddev101.jpg" alt=""></a>
+<a href="<c:url value="/" />"><img id="" src="resources/img/androiddev101.jpg" alt="404 Error (Page Not Found)"></a>
 <body>
 
 </body>

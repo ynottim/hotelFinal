@@ -34,7 +34,7 @@
                                     <img src="<c:url value="${entry.imagePath}" />" alt="">
                                     <div class="overlay">
                                         <div class="overlay-links">
-                                            <a href="<c:url value="/readPost?id=${entry.id}" />"><i class="fa fa-link"></i></a>
+                                            <a href="<c:url value="/readHotelReview?id=${entry.id}" />"><i class="fa fa-link"></i></a>
                                             <a href="<c:url value="${entry.imagePath}" />" class="popup-img-single hoverZoomLink" title="image title"><i class="fa fa-search-plus"></i></a>
                                         </div>
                                     </div>
@@ -46,7 +46,7 @@
                                     </div>
                                     <div class="blogpost-content">
                                         <header>
-                                            <h2 class="title"><a href="#">${entry.title}</a></h2>
+                                            <h2 class="title"><a href="<c:url value="/readHotelReview?id=${entry.id}" />">${entry.title}</a></h2>
                                             <div class="submitted"><i class="fa fa-user pr-5"></i> by <a href="#">${entry.author.firstName} ${entry.author.lastName}</a></div>
                                         </header>
                                         <p>${fn:substring(entry.entry, 0, 100)}</p>

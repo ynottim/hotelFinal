@@ -17,7 +17,7 @@
             <div class="main col-md-8">
                 <!-- Forms start -->
                 <!-- ============================================================================== -->
-                <h2>Add Hotel Entry</h2>
+                <h2>Add Hotel Review</h2>
                 <form role="form" action="<c:url value="/secure/addHotelReview" />" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="hotelTitle">Hotel Review</label>
@@ -30,7 +30,7 @@
                     <div class="form-group">
                         <label for="image">Hotel Images:</label>
                         <input type="file" id="image" name="image"><br />
-                        <input type="file" name="image"><br />
+                        <%--<input type="file" name="image"><br />--%>
                         <%--<input type="file" name="file"><br />--%>
                         <%--<input type="file" name="file"><br />--%>
                         <%--<input type="file" name="file"><br />--%>
