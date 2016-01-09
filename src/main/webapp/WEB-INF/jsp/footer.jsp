@@ -35,7 +35,5 @@
 <script type="text/javascript" src="resources/js/SmoothScroll.js"></script>
 <!-- Initialization of Plugins -->
 <script type="text/javascript" src="resources/js/template.js"></script>
-<!-- Custom Scripts -->
-<script type="text/javascript" src="resources/js/custom.js"></script>
 </body>
 </html>

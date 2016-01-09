@@ -92,7 +92,7 @@ public class EntryController {
         User user = (User) session.getAttribute("user");
         ModelAndView mav;
 
-        if(checkCsrfToken(session, csrfToken) && isValidData(title, entry)){
+        if(checkCsrfToken(session, csrfToken) && isValidData(title, entry) && checkMap(map)){
             String[] tagArray = StringUtils.split(tags, ",");
             for( int i=0; i<tagArray.length; i++ ){
                 tagArray[i] = tagArray[i].trim();
@@ -228,8 +228,12 @@ public class EntryController {
     }
 
     private boolean checkMap(String map) {
+        if(map == null)
+        {
+            return true;
+        }
         String mapCheck = "<iframe src=\"https://www.google.com/maps/embed?";
-        return StringUtils.contains(mapCheck, map);
+        return StringUtils.startsWith(map, mapCheck);
     }
 
     public void setEntryDao(EntryDao entryDao) {

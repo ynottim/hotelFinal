@@ -25,6 +25,7 @@ public class EntryDao {
 
         jdbcTemplate.update(sql, entry.getTitle(),
                 entry.getEntry(),
+                entry.getMap(),
                 user.getId(),
                 entry.getImagePath());
 

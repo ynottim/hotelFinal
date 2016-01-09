@@ -28,6 +28,10 @@
                         <textarea class="form-control" rows="3" id="entry" name="entry" placeholder="Hotel Review"></textarea>
                     </div>
                     <div class="form-group">
+                        <label for="map">Map Link(Google Maps Embedded Map)</label>
+                        <textarea class="form-control" rows="3" id="map" name="map" placeholder="Map Link"></textarea>
+                    </div>
+                    <div class="form-group">
                         <label for="image">Hotel Images:</label>
                         <input type="file" id="image" name="image"><br />
                         <%--<input type="file" name="image"><br />--%>

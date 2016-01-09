@@ -2,18 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="021fb430-0918-45ee-b92a-0a7831db04c3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/img/500.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bau/hotel/ErrorController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bau/hotel/model/Entry.java" afterPath="$PROJECT_DIR$/src/main/java/com/bau/hotel/model/Entry.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/bau/hotel/model/Entry.class" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/bau/hotel/model/Entry.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/bau/hotel/model/Entry.class" afterPath="$PROJECT_DIR$/target/classes/com/bau/hotel/model/Entry.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/bau/hotel/EntryController.class" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/bau/hotel/EntryController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/bau/hotel/EntryController.class" afterPath="$PROJECT_DIR$/target/classes/com/bau/hotel/EntryController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/bau/hotel/dao/EntryDao$EntryRowMapper.class" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/bau/hotel/dao/EntryDao$EntryRowMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/bau/hotel/dao/EntryDao$EntryRowMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/bau/hotel/dao/EntryDao$EntryRowMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/bau/hotel/dao/EntryDao.class" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/bau/hotel/dao/EntryDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/bau/hotel/dao/EntryDao.class" afterPath="$PROJECT_DIR$/target/classes/com/bau/hotel/dao/EntryDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/bau/hotel/dao/InitializeDatabase.class" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/bau/hotel/dao/InitializeDatabase.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/bau/hotel/dao/InitializeDatabase.class" afterPath="$PROJECT_DIR$/target/classes/com/bau/hotel/dao/InitializeDatabase.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bau/hotel/EntryController.java" afterPath="$PROJECT_DIR$/src/main/java/com/bau/hotel/EntryController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bau/hotel/dao/EntryDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/bau/hotel/dao/EntryDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hotels.iml" afterPath="$PROJECT_DIR$/Hotels.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bau/hotel/dao/InitializeDatabase.java" afterPath="$PROJECT_DIR$/src/main/java/com/bau/hotel/dao/InitializeDatabase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addHotelReview.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addHotelReview.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/error.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/error.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/error404.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/error404.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/readHotelReview.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/readHotelReview.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/webContexts.xml" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/addHotelReview.jsp" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/addHotelReview.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/footer.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/footer.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/readHotelReview.jsp" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/readHotelReview.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="blog.iws" />
@@ -37,18 +40,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EntryController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EntryController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bau/hotel/EntryController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+            <state vertical-scroll-proportion="1.786925">
+              <caret line="238" column="26" selection-start-line="238" selection-start-column="26" selection-end-line="238" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1375#1376#0" expanded="true" />
                 <element signature="e#1419#1420#0" expanded="true" />
-                <element signature="e#5828#5925#0" expanded="false" />
-                <element signature="e#8699#8700#0" expanded="true" />
-                <element signature="e#8759#8760#0" expanded="true" />
+                <element signature="e#5845#5942#0" expanded="false" />
+                <element signature="e#8716#8717#0" expanded="true" />
+                <element signature="e#8776#8777#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,54 +61,8 @@
         <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.3.RELEASE/spring-web-4.2.3.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="231" column="0" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
+              <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Entry.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bau/hotel/model/Entry.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bau/hotel/dao/UserDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding>
-                <marker date="1449925858199" expanded="true" signature="473:562" placeholder="INSERT INTO ..." />
-                <marker date="1449925858199" expanded="true" signature="833:920" placeholder="SELECT id, f..users..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EntryDao.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bau/hotel/dao/EntryDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.0741758">
-              <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1452351048300" expanded="true" signature="722:804" placeholder="INSERT INTO ..." />
-                <marker date="1452351048300" expanded="true" signature="1018:1042" placeholder="select SCOPE..." />
-                <marker date="1452351048300" expanded="true" signature="1295:1329" placeholder="INSERT INTO ..." />
-                <marker date="1452351048300" expanded="true" signature="1477:1532" placeholder="INSERT INTO ..." />
-                <marker date="1452351048300" expanded="true" signature="1704:1744" placeholder="SELECT id, n..tags..." />
-                <marker date="1452351048300" expanded="true" signature="2033:2251" placeholder="select e.id,..entries..." />
-                <marker date="1452351048300" expanded="true" signature="2528:2636" placeholder="SELECT t.id,..tags..." />
-                <marker date="1452351048300" expanded="true" signature="2782:2828" placeholder="SELECT t.id,..tags..." />
-                <marker date="1452351048300" expanded="true" signature="3077:3108" placeholder="SELECT t.id,..tags..." />
-                <marker date="1452351048300" expanded="true" signature="3238:3429" placeholder="select e.id,..entries..." />
-                <marker date="1452351048300" expanded="true" signature="3569:3854" placeholder="select e.id,..entries..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -144,7 +101,7 @@
         <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.2.3.RELEASE/spring-webmvc-4.2.3.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="968" column="0" selection-start-line="968" selection-start-column="0" selection-end-line="968" selection-end-column="0" />
+              <caret line="895" column="0" selection-start-line="895" selection-start-column="0" selection-end-line="895" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -156,6 +113,41 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="847" column="0" selection-start-line="847" selection-start-column="0" selection-end-line="847" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Entry.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bau/hotel/model/Entry.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+              <folding>
+                <element signature="e#568#613#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EntryDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bau/hotel/dao/EntryDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1452352735372" expanded="true" signature="722:804" placeholder="INSERT INTO ..." />
+                <marker date="1452352735372" expanded="true" signature="1050:1074" placeholder="select SCOPE..." />
+                <marker date="1452352735372" expanded="true" signature="1327:1361" placeholder="INSERT INTO ..." />
+                <marker date="1452352735372" expanded="true" signature="1509:1564" placeholder="INSERT INTO ..." />
+                <marker date="1452352735372" expanded="true" signature="1736:1776" placeholder="SELECT id, n..tags..." />
+                <marker date="1452352735372" expanded="true" signature="2065:2283" placeholder="select e.id,..entries..." />
+                <marker date="1452352735372" expanded="true" signature="2560:2668" placeholder="SELECT t.id,..tags..." />
+                <marker date="1452352735372" expanded="true" signature="2814:2860" placeholder="SELECT t.id,..tags..." />
+                <marker date="1452352735372" expanded="true" signature="3109:3140" placeholder="SELECT t.id,..tags..." />
+                <marker date="1452352735372" expanded="true" signature="3270:3461" placeholder="select e.id,..entries..." />
+                <marker date="1452352735372" expanded="true" signature="3601:3886" placeholder="select e.id,..entries..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -194,7 +186,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bau/blog/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/readHotelInfo.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addHotelInfo.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/footer.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/register.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/side.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/bau/hotel/MainController.java" />
@@ -218,8 +209,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bau/hotel/dao/InitializeDatabase.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bau/hotel/model/Entry.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/readHotelReview.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bau/hotel/EntryController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/footer.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/bau/hotel/dao/EntryDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bau/hotel/EntryController.java" />
       </list>
     </option>
   </component>
@@ -349,11 +341,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -372,44 +360,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hotel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyFinalProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -436,96 +386,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="hotel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hotel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyFinalProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hotel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hotel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyFinalProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hotel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="filter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hotel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyFinalProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hotel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -990,7 +850,7 @@
       <workItem from="1450369527658" duration="367000" />
       <workItem from="1450699057501" duration="11533000" />
       <workItem from="1450779176001" duration="73504000" />
-      <workItem from="1452342296480" duration="6674000" />
+      <workItem from="1452342296480" duration="11828000" />
     </task>
     <task id="LOCAL-00001" summary="updated file times to imageFile as an array but imageFile.length wont work now">
       <created>1450180067738</created>
@@ -1070,11 +930,17 @@
       <option name="project" value="LOCAL" />
       <updated>1452177889576</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="added a embed map link option">
+      <created>1452351398201</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1452351398201</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120901000" />
+    <option name="totallyTimeSpent" value="126055000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1097,20 +963,20 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.64790994" sideWeight="0.5128593" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.49394855" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3697749" sideWeight="0.48562783" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.48487142" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2909968" sideWeight="0.48562783" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36173633" sideWeight="0.48487142" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28895614" sideWeight="0.5504587" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24508321" sideWeight="0.5602241" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24508321" sideWeight="0.44954127" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1505295" sideWeight="0.54501605" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24508321" sideWeight="0.75283444" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24508321" sideWeight="0.24716553" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24758843" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25945538" sideWeight="0.5386417" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3762058" sideWeight="0.4871407" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12379421" sideWeight="0.4871407" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1170,7 +1036,8 @@
     <MESSAGE value="one image with meme check comments removed" />
     <MESSAGE value="tags working, 404 error working, 1photo meme works but if its not image page crashes working on api now" />
     <MESSAGE value="tags working, 400 and 500 error working, 1photo meme works but if its not image page crashes working on api now" />
-    <option name="LAST_COMMIT_MESSAGE" value="tags working, 400 and 500 error working, 1photo meme works but if its not image page crashes working on api now" />
+    <MESSAGE value="added a embed map link option" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a embed map link option" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1179,10 +1046,10 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/bau/hotel/EntryController.java</url>
           <line>94</line>
           <properties />
-          <option name="timeStamp" value="55" />
+          <option name="timeStamp" value="57" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="56" />
+      <option name="time" value="58" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1241,13 +1108,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bau/hotel/filter/AuthenticationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bau/hotel/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1290,6 +1150,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1319,14 +1180,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/footer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/hotel-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22727273">
@@ -1339,14 +1192,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0016835">
           <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="129" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="129" />
           <folding />
         </state>
       </provider>
@@ -1367,32 +1212,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bau/hotel/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bau/hotel/model/Tag.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28619528">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bau/hotel/dao/InitializeDatabase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
-          <folding>
-            <marker date="1452346764281" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..IF..." />
-            <marker date="1452346764281" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..IF..." />
-            <marker date="1452346764281" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..IF..." />
-            <marker date="1452346764281" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..IF..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1509,7 +1333,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
           <folding>
-            <element signature="e#2840#2856#0" expanded="true" />
+            <element signature="e#2840#2856#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1519,7 +1343,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding>
-            <element signature="e#1336#1337#0" expanded="true" />
+            <element signature="e#1336#1337#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1528,6 +1352,101 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bau/hotel/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.576923">
+          <caret line="33" column="129" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="129" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/footer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.653847">
+          <caret line="36" column="71" selection-start-line="36" selection-start-column="71" selection-end-line="36" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bau/hotel/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding>
+            <marker date="1449925858199" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1449925858199" expanded="true" signature="-1:-1" placeholder="SELECT id, f..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bau/hotel/dao/InitializeDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
+          <folding>
+            <marker date="1452346764281" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..IF..." />
+            <marker date="1452346764281" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..IF..." />
+            <marker date="1452346764281" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..IF..." />
+            <marker date="1452346764281" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..IF..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bau/hotel/dao/EntryDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1452352735372" expanded="true" signature="722:804" placeholder="INSERT INTO ..." />
+            <marker date="1452352735372" expanded="true" signature="1050:1074" placeholder="select SCOPE..." />
+            <marker date="1452352735372" expanded="true" signature="1327:1361" placeholder="INSERT INTO ..." />
+            <marker date="1452352735372" expanded="true" signature="1509:1564" placeholder="INSERT INTO ..." />
+            <marker date="1452352735372" expanded="true" signature="1736:1776" placeholder="SELECT id, n..tags..." />
+            <marker date="1452352735372" expanded="true" signature="2065:2283" placeholder="select e.id,..entries..." />
+            <marker date="1452352735372" expanded="true" signature="2560:2668" placeholder="SELECT t.id,..tags..." />
+            <marker date="1452352735372" expanded="true" signature="2814:2860" placeholder="SELECT t.id,..tags..." />
+            <marker date="1452352735372" expanded="true" signature="3109:3140" placeholder="SELECT t.id,..tags..." />
+            <marker date="1452352735372" expanded="true" signature="3270:3461" placeholder="select e.id,..entries..." />
+            <marker date="1452352735372" expanded="true" signature="3601:3886" placeholder="select e.id,..entries..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bau/hotel/filter/AuthenticationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bau/hotel/model/Entry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+          <folding>
+            <element signature="e#568#613#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.3.RELEASE/spring-web-4.2.3.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1556,6 +1475,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.2.3.RELEASE/spring-webmvc-4.2.3.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="895" column="0" selection-start-line="895" selection-start-column="0" selection-end-line="895" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.2.3.RELEASE/spring-webmvc-4.2.3.RELEASE-sources.jar!/org/springframework/web/servlet/FrameworkServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1564,73 +1491,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bau/hotel/model/Entry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bau/hotel/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <marker date="1449925858199" expanded="true" signature="473:562" placeholder="INSERT INTO ..." />
-            <marker date="1449925858199" expanded="true" signature="833:920" placeholder="SELECT id, f..users..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bau/hotel/EntryController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.786925">
+          <caret line="238" column="26" selection-start-line="238" selection-start-column="26" selection-end-line="238" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1375#1376#0" expanded="true" />
             <element signature="e#1419#1420#0" expanded="true" />
-            <element signature="e#5828#5925#0" expanded="false" />
-            <element signature="e#8699#8700#0" expanded="true" />
-            <element signature="e#8759#8760#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.3.RELEASE/spring-web-4.2.3.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="231" column="0" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.2.3.RELEASE/spring-webmvc-4.2.3.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="968" column="0" selection-start-line="968" selection-start-column="0" selection-end-line="968" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bau/hotel/dao/EntryDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.0741758">
-          <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1452351048300" expanded="true" signature="722:804" placeholder="INSERT INTO ..." />
-            <marker date="1452351048300" expanded="true" signature="1018:1042" placeholder="select SCOPE..." />
-            <marker date="1452351048300" expanded="true" signature="1295:1329" placeholder="INSERT INTO ..." />
-            <marker date="1452351048300" expanded="true" signature="1477:1532" placeholder="INSERT INTO ..." />
-            <marker date="1452351048300" expanded="true" signature="1704:1744" placeholder="SELECT id, n..tags..." />
-            <marker date="1452351048300" expanded="true" signature="2033:2251" placeholder="select e.id,..entries..." />
-            <marker date="1452351048300" expanded="true" signature="2528:2636" placeholder="SELECT t.id,..tags..." />
-            <marker date="1452351048300" expanded="true" signature="2782:2828" placeholder="SELECT t.id,..tags..." />
-            <marker date="1452351048300" expanded="true" signature="3077:3108" placeholder="SELECT t.id,..tags..." />
-            <marker date="1452351048300" expanded="true" signature="3238:3429" placeholder="select e.id,..entries..." />
-            <marker date="1452351048300" expanded="true" signature="3569:3854" placeholder="select e.id,..entries..." />
+            <element signature="e#5845#5942#0" expanded="false" />
+            <element signature="e#8716#8717#0" expanded="true" />
+            <element signature="e#8776#8777#0" expanded="true" />
           </folding>
         </state>
       </provider>
