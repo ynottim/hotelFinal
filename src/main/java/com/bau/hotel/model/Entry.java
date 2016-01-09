@@ -17,6 +17,7 @@ public class Entry implements Serializable{
     private String entry;
     private Date createDate;
     private User author;
+    private String map;
     private String imagePath;
     private List<String> tagList = new ArrayList<>();
 
@@ -94,4 +95,11 @@ public class Entry implements Serializable{
         return this.tagList.size() > 0;
     }
 
+    public String getMap() {
+        return map;
+    }
+
+    public void setMap(String map) {
+        this.map = map;
+    }
 }

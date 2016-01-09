@@ -82,6 +82,7 @@ public class EntryController {
     @RequestMapping(path = "/secure/addHotelReview", method = RequestMethod.POST)
     public ModelAndView addEntry(@RequestParam("title") String title,
                                  @RequestParam("entry") String entry,
+                                 @RequestParam("map") String map,
                                  @RequestParam("tags") String tags,
                                  @RequestParam("csrfToken") String csrfToken,
                                  @RequestParam("image") MultipartFile imageFile,
@@ -101,6 +102,7 @@ public class EntryController {
             Entry entryData = new Entry();
             entryData.setTitle(title);
             entryData.setEntry(entry);
+            entryData.setMap(map);
             entryData.setImagePath(saveUploadedFile(imageFile, session.getServletContext()));
             entryData.setTagList(Arrays.asList(tagArray));
 
@@ -223,6 +225,11 @@ public class EntryController {
 
     private boolean isValidData(String title, String entry) {
         return StringUtils.isNoneBlank(title, entry);
+    }
+
+    private boolean checkMap(String map) {
+        String mapCheck = "<iframe src=\"https://www.google.com/maps/embed?";
+        return StringUtils.contains(mapCheck, map);
     }
 
     public void setEntryDao(EntryDao entryDao) {

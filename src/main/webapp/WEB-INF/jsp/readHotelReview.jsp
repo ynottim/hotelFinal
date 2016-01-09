@@ -37,6 +37,9 @@
                             </header>
                             <img src="<c:url value="${entry.imagePath}" />" alt="">
                             <p>${entry.entry}</p>
+                            <div>
+                                ${entry.map}
+                            </div>
                         </div>
                     </div>
                     <footer class="clearfix">

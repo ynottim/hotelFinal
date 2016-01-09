@@ -21,7 +21,7 @@ public class EntryDao {
     private JdbcTemplate jdbcTemplate;
 
     public void addEntry(Entry entry, User user){
-        String sql = "INSERT INTO entries (title, entry, author, image_path) VALUES (?, ?, ?, ?)";
+        String sql = "INSERT INTO entries (title, entry, map, author, image_path) VALUES (?, ?, ?, ?, ?)";
 
         jdbcTemplate.update(sql, entry.getTitle(),
                 entry.getEntry(),
@@ -60,7 +60,7 @@ public class EntryDao {
     }
 
     public Entry getEntry(int entryId) {
-        String sql = "select e.id, e.title, e.entry, e.create_date, e.image_path, u.firstname, u.lastname " +
+        String sql = "select e.id, e.title, e.entry, e.map, e.create_date, e.image_path, u.firstname, u.lastname " +
                 "  from entries e, users u " +
                 " where e.author = u.id " +
                 "   and e.id = ? ";
@@ -96,7 +96,7 @@ public class EntryDao {
     }
 
     public List<Entry> getEntries(){
-        String sql = "select e.id, e.title, e.entry, e.create_date, e.image_path, u.firstname, u.lastname " +
+        String sql = "select e.id, e.title, e.entry, e.map, e.create_date, e.image_path, u.firstname, u.lastname " +
                      "  from entries e, users u " +
                      " where e.author = u.id ";
 
@@ -104,7 +104,7 @@ public class EntryDao {
     }
 
     public List<Entry> getEntries(Tag tag){
-        String sql = "select e.id, e.title, e.entry, e.create_date, e.image_path, u.firstname, u.lastname " +
+        String sql = "select e.id, e.title, e.entry, e.map, e.create_date, e.image_path, u.firstname, u.lastname " +
                 "  from entries e, users u, entry_tags et " +
                 " where e.author = u.id " +
                 "   AND e.id = et.entry_id " +
@@ -125,6 +125,7 @@ public class EntryDao {
             entry.setId(rs.getInt("id"));
             entry.setTitle(rs.getString("title"));
             entry.setEntry(rs.getString("entry"));
+            entry.setMap(rs.getString("map"));
             entry.setCreateDate(rs.getDate("create_date"));
             entry.setImagePath(rs.getString("image_path"));
 

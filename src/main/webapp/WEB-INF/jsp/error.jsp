@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Tim
@@ -12,6 +13,7 @@
 </head>
 
 <body>
-
+<a href="<c:url value="/" />"><img id="" src=<c:url value="/resources/img/500.jpg" />></a>
+<h1>5XX Error (Server Error)</h1>
 </body>
 </html>

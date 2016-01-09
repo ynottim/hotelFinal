@@ -12,7 +12,8 @@
 <head>
     <title>404 Error Page Not Found</title>
 </head>
-<a href="<c:url value="/" />"><img id="" src="resources/img/androiddev101.jpg" alt="404 Error (Page Not Found)"></a>
+<a href="<c:url value="/" />"><img id="" src=<c:url value="/resources/img/androiddev101.jpg" />></a>
+<h1>"404 Error (Page Not Found)"</h1>
 <body>
 
 </body>
