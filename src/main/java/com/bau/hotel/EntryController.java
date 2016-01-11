@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
+import org.springframework.web.bind.annotation.RestController;
+
 
 import javax.imageio.ImageIO;
 import javax.servlet.ServletContext;
@@ -24,10 +26,11 @@ import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-@Controller
+@RestController
 public class EntryController {
 
     public static final String CSRF_TOKEN_SESSION_KEY = "addHotelPostCsrfToken";
@@ -35,9 +38,16 @@ public class EntryController {
     @Autowired
     private EntryDao entryDao;
 
-    @RequestMapping("/rest/entries")
+    @RequestMapping("/rest/entries1")
     @ResponseBody
     public List<Entry> getAllEntries(){
+        return entryDao.getEntries();
+    }
+
+    @RequestMapping(value = "/rest/entries/", method = RequestMethod.GET)
+    public List<Entry> getEntries(){
+//        List<Entry> listforEntry = new ArrayList<Entry>();
+//        listforEntry = entryDao.getEntries();
         return entryDao.getEntries();
     }
 
@@ -232,8 +242,10 @@ public class EntryController {
         {
             return true;
         }
-        String mapCheck = "<iframe src=\"https://www.google.com/maps/embed?";
-        return StringUtils.startsWith(map, mapCheck);
+        else{
+            String mapCheck = "<iframe src=\"https://www.google.com/maps/embed?";
+            return StringUtils.startsWith(map, mapCheck);
+        }
     }
 
     public void setEntryDao(EntryDao entryDao) {

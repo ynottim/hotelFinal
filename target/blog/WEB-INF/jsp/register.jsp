@@ -6,6 +6,9 @@
 <div class="scrollToTop" style="display: none;"><i class="icon-up-open-big"></i></div>
 <div class="page-wrapper">
     <jsp:include page="header.jsp" />
+    <div align="center">
+        <a href="?language=en">English</a>|<a href="?language=tr">Turkish</a>
+    </div>
 <!-- main-container start -->
 <!-- ================ -->
 <section class="main-container" style="margin-top: 0px;">

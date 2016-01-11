@@ -10,8 +10,6 @@ import java.util.List;
 
 public class Entry implements Serializable{
 
-    private static final long serialVersionID = -7046343544195294916L;
-
     private int id;
     private String title;
     private String entry;
