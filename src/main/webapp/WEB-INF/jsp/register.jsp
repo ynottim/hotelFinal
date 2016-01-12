@@ -1,4 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <!DOCTYPE html>
 <html lang="en" class=" js no-touch csstransitions">
 
@@ -7,8 +9,8 @@
 <div class="page-wrapper">
     <jsp:include page="header.jsp" />
     <div align="center">
-        <a href="?language=en">English</a>
-        <a href="?language=tr">Turkish</a>
+        <a href="?lang=en">English</a>
+        <a href="?lang=tr">Turkish</a>
     </div>
 <!-- main-container start -->
 <!-- ================ -->
@@ -26,35 +28,35 @@
                     </c:if>
                     <form action="<c:url value="/register" />" method="post" class="form-horizontal" role="form">
                         <div class="form-group has-feedback">
-                            <label for="inputName" class="col-sm-3 control-label">First Name <span class="text-danger small">*</span></label>
+                            <label for="inputName" class="col-sm-3 control-label"><spring:message code="lbl.firstName" text="First Name" /><span class="text-danger small">*</span></label>
                             <div class="col-sm-8">
                                 <input type="text" class="form-control" id="inputName" name="firstName" placeholder="First Name" required="">
                                 <i class="fa fa-pencil form-control-feedback"></i>
                             </div>
                         </div>
                         <div class="form-group has-feedback">
-                            <label for="inputLastName" class="col-sm-3 control-label">Last Name <span class="text-danger small">*</span></label>
+                            <label for="inputLastName" class="col-sm-3 control-label"><spring:message code="lbl.lastName" text="Last Name" /><span class="text-danger small">*</span></label>
                             <div class="col-sm-8">
                                 <input type="text" class="form-control" id="inputLastName" name="lastName" placeholder="Last Name" required="">
                                 <i class="fa fa-pencil form-control-feedback"></i>
                             </div>
                         </div>
                         <div class="form-group has-feedback">
-                            <label for="inputUserName" class="col-sm-3 control-label">User Name <span class="text-danger small">*</span></label>
+                            <label for="inputUserName" class="col-sm-3 control-label"><spring:message code="lbl.un" text="User Name" /><span class="text-danger small">*</span></label>
                             <div class="col-sm-8">
                                 <input type="text" class="form-control" id="inputUserName" name="username" placeholder="User Name" required="">
                                 <i class="fa fa-user form-control-feedback"></i>
                             </div>
                         </div>
                         <div class="form-group has-feedback">
-                            <label for="inputEmail" class="col-sm-3 control-label">Email <span class="text-danger small">*</span></label>
+                            <label for="inputEmail" class="col-sm-3 control-label"><spring:message code="lbl.email" text="Email" /><span class="text-danger small">*</span></label>
                             <div class="col-sm-8">
                                 <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email" required="">
                                 <i class="fa fa-envelope form-control-feedback"></i>
                             </div>
                         </div>
                         <div class="form-group has-feedback">
-                            <label for="inputPassword" class="col-sm-3 control-label">Password <span class="text-danger small">*</span></label>
+                            <label for="inputPassword" class="col-sm-3 control-label"><spring:message code="lbl.pass" text="Password" /><span class="text-danger small">*</span></label>
                             <div class="col-sm-8">
                                 <input type="password" class="form-control" id="inputPassword" name="password" placeholder="Password" required="">
                                 <i class="fa fa-lock form-control-feedback"></i>

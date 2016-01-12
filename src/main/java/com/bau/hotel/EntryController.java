@@ -38,20 +38,11 @@ public class EntryController {
     @Autowired
     private EntryDao entryDao;
 
-    @RequestMapping("/rest/entries1")
+    @RequestMapping("/rest/entries")
     @ResponseBody
     public List<Entry> getAllEntries(){
         return entryDao.getEntries();
     }
-
-    @RequestMapping(value = "/rest/entries/", method = RequestMethod.GET)
-    public List<Entry> getEntries(){
-//        List<Entry> listforEntry = new ArrayList<Entry>();
-//        listforEntry = entryDao.getEntries();
-        return entryDao.getEntries();
-    }
-
-
 
     @RequestMapping("/readHotelReview")
     public ModelAndView readPost(@RequestParam(name = "id", required = false) Integer entryId){
